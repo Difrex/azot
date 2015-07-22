@@ -1,0 +1,16 @@
+{
+  'actions': [
+    {
+      'corner': 'top',
+      'position_y': 'middle',
+      'type': 'notify',
+      'command': 'df -h'
+    },
+    {
+      'corner': 'left',
+      'position': 'bottom',
+      'type': 'exec',
+      'command': 'scrot'
+    }
+  ]
+}

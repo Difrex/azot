@@ -1,7 +1,6 @@
 import ast
 import argparse
 import os
-from pprint import pprint
 
 # Globals
 config_path = os.environ['HOME'] + '/.config/azot/config.json'
