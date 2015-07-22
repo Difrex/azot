@@ -44,9 +44,9 @@ def get_middle_areas():
     middle_y_end = int( middle_y + middle_y_area_pixels )
     
     corners = { 'left_corner': 0,
-                'right_corner': geometry['x'],
+                'right_corner': geometry['x'] - 1,
                 'top_corner': 0,
-                'bottom_corner': geometry['y'],
+                'bottom_corner': geometry['y'] - 1,
                 'middle_x_start': middle_x_start,
                 'middle_x_end': middle_x_end,
                 'middle_y_start': middle_y_start,
