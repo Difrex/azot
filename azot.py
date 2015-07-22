@@ -1,13 +1,12 @@
-from Xlib import display
 import azot.action
+from azot.X import get_geometry, get_cursor_position
+import azot.config
 
-azot.action.do("TRATATA")
 
-width = display.Display().screen().width_in_pixels
-height = display.Display().screen().height_in_pixels
+geometry = get_geometry()
+position = get_cursor_position()
 
-root = display.Display().screen().root.display
+azot.config.load()
 
-# print data["root_x"], data["root_y"]
-#print width, height 
-#print root.__dict__
+print geometry['x'], geometry['y']
+print position['x'], position['y']
