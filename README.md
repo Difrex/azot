@@ -14,10 +14,10 @@ Edit config.sample.json and put it into ~/.config/azot/config.json
 * position: 'left', 'right', 'middle'
 
 ## Usage
-
-azot.py [-h] [-c CONFIG]
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -c CONFIG, --config CONFIG
+```
+  azot.py [-h] [-c CONFIG]
+  optional arguments:
+    -h, --help            show this help message and exit
+    -c CONFIG, --config CONFIG
+```
 
