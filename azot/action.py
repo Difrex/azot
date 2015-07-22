@@ -25,17 +25,11 @@ def do():
                 if position['y'] == corners[ action['corner'] ] and position['x'] == corners[action['position']]:
                     msg = type_exec(action)
                     notify(msg)
-                    print action
-                    print position
-                    print 'Get position: {0} and corner {1}'.format(action['position'], action['corner'])
                     sleep(1) 
             elif action['corner'] == 'left' or action['corner'] == 'right':
                 if position['x'] == corners[ action['position'] ] and position['y'] == corners[ action['corner'] ]:
                     msg = type_exec(action)
                     notify(msg)
-                    print action
-                    print position
-                    print 'Get position: {0} and corner {1}'.format(action['position'], action['corner'])
                     sleep(1)
 
         # middles
@@ -44,17 +38,11 @@ def do():
                 if position['y'] == corners[ action['corner'] ] and position['x'] > config['corners']['middle_x_start'] and position['x'] < config['corners']['middle_x_end']:
                     msg = type_exec(action)
                     notify(msg)
-                    print action
-                    print position
-                    print 'Get position: {0} and corner {1}'.format(action['position'], action['corner'])
                     sleep(1) 
             elif action['corner'] == 'left' or action['corner'] == 'right':
                 if position['x'] == corners[ action['corner'] ] and position['y'] > config['corners']['middle_y_start'] and position['y'] < config['corners']['middle_y_end']:
                     msg = type_exec(action)
                     notify(msg)
-                    print action
-                    print position
-                    print 'Get position: {0} and corner {1}'.format(action['position'], action['corner'])
                     sleep(1)
 
 
@@ -79,5 +67,5 @@ def get_cmd(cmd):
 
 # Show notify message
 def notify(msg):
-    get_cmd( "notify-send 'azot event' '{0}'".format(msg) )
+    get_cmd( "notify-send 'azot event' \"{0}\"".format(msg) )
 

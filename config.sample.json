@@ -8,7 +8,13 @@
     },
     {
       'corner': 'left',
-      'position': 'bottom',
+      'position': 'top',
+      'type': 'notify',
+      'command': 'ls /'
+    },
+    {
+      'corner': 'bottom',
+      'position': 'right',
       'type': 'exec',
       'command': 'scrot'
     }
