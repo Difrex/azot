@@ -1,7 +1,6 @@
-import azot.action
-from azot.X import get_geometry, get_cursor_position
-import azot.config
+#!/usr/bin/python
 
+import azot.action
 
 while 1:
     azot.action.do()

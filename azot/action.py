@@ -1,5 +1,4 @@
 import os
-import subprocess
 import azot.config
 from X import get_cursor_position
 from time import sleep
