@@ -6,7 +6,7 @@ import azot.config
 geometry = get_geometry()
 position = get_cursor_position()
 
-azot.config.load()
+config = azot.config.load()
 
 print geometry['x'], geometry['y']
 print position['x'], position['y']
