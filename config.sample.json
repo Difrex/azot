@@ -2,7 +2,7 @@
   'actions': [
     {
       'corner': 'top',
-      'position_y': 'middle',
+      'position': 'middle',
       'type': 'notify',
       'command': 'df -h'
     },
