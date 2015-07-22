@@ -1,6 +1,8 @@
 # Azot
 
-Screen corners actions in all WM.
+Screen corners action in all WMs.
+
+It's look like KWin or Compiz, e.t.c
 
 ## Configuration
 
