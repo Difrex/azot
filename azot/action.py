@@ -54,6 +54,8 @@ def type_exec(action):
     elif action['type'] == 'exec':
         get_cmd(action['command'])
         return action['command']
+    elif action['type'] == 'simple':
+        get_cmd(action['command'])
     else:
         return 'Unknown type!'
 
