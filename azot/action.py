@@ -56,6 +56,7 @@ def type_exec(action):
         return action['command']
     elif action['type'] == 'simple':
         get_cmd(action['command'])
+        return None
     else:
         return 'Unknown type!'
 
@@ -69,5 +70,6 @@ def get_cmd(cmd):
 
 # Show notify message
 def notify(msg):
-    get_cmd( "notify-send 'azot event' \"{0}\"".format(msg) )
+    if msg is not None:
+        get_cmd( "notify-send 'azot event' \"{0}\"".format(msg) )
 
