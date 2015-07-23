@@ -15,6 +15,12 @@ Edit config.sample.json and put it into ~/.config/azot/config.json
 * corner: Screen corner 'left', 'right', 'top', 'bottom'
 * position: 'left', 'right', 'middle'
 
+### Depends
+
+* X11
+* libnotify-bin
+* python-xlib
+
 ## Usage
 ```
   azot.py [-h] [-c CONFIG]
