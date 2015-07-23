@@ -8,9 +8,10 @@ It's look like KWin or Compiz, e.t.c
 
 Edit config.sample.json and put it into ~/.config/azot/config.json
 
-* type must be ''exec'' or ''notify''
+* type must be ''exec'', ''notify'' or ''simple''
 * exec: just show command
 * notify: Show output from command
+* simple: just execute command without notify
 * command: command to execute
 * corner: Screen corner 'left', 'right', 'top', 'bottom'
 * position: 'left', 'right', 'middle'
