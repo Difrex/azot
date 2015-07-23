@@ -23,7 +23,7 @@ rm -rf $RPM_BUILD_ROOT
 rm -f *.pyc
 rm -f azot/*.pyc
 
-mkdir -p $RPM_BUILD_ROOT/usr/lib/python2.7/dist-packages/azot/
+mkdir -p $RPM_BUILD_ROOT/usr/lib/python2.7/site-packages/azot/
 mkdir -p $RPM_BUILD_ROOT/usr/share/doc/azot/
 mkdir -p $RPM_BUILD_ROOT/usr/bin/
 
@@ -31,7 +31,7 @@ cp README.md $RPM_BUILD_ROOT/usr/share/doc/azot
 cp LICENSE $RPM_BUILD_ROOT/usr/share/doc/azot
 cp config.sample.json $RPM_BUILD_ROOT/usr/share/doc/azot
 cp azot.py $RPM_BUILD_ROOT/usr/bin/
-cp azot/* $RPM_BUILD_ROOT/usr/lib/python2.7/dist-packages/azot/
+cp azot/* $RPM_BUILD_ROOT/usr/lib/python2.7/site-packages/azot/
 
 %{_fixperms} $RPM_BUILD_ROOT/*
 
@@ -40,18 +40,18 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 /usr/bin/azot.py
-/usr/lib/python2.7/dist-packages/azot/X.py
-/usr/lib/python2.7/dist-packages/azot/X.pyc
-/usr/lib/python2.7/dist-packages/azot/X.pyo
-/usr/lib/python2.7/dist-packages/azot/__init__.py
-/usr/lib/python2.7/dist-packages/azot/__init__.pyc
-/usr/lib/python2.7/dist-packages/azot/__init__.pyo
-/usr/lib/python2.7/dist-packages/azot/action.py
-/usr/lib/python2.7/dist-packages/azot/action.pyc
-/usr/lib/python2.7/dist-packages/azot/action.pyo
-/usr/lib/python2.7/dist-packages/azot/config.py
-/usr/lib/python2.7/dist-packages/azot/config.pyc
-/usr/lib/python2.7/dist-packages/azot/config.pyo
+/usr/lib/python2.7/site-packages/azot/X.py
+/usr/lib/python2.7/site-packages/azot/X.pyc
+/usr/lib/python2.7/site-packages/azot/X.pyo
+/usr/lib/python2.7/site-packages/azot/__init__.py
+/usr/lib/python2.7/site-packages/azot/__init__.pyc
+/usr/lib/python2.7/site-packages/azot/__init__.pyo
+/usr/lib/python2.7/site-packages/azot/action.py
+/usr/lib/python2.7/site-packages/azot/action.pyc
+/usr/lib/python2.7/site-packages/azot/action.pyo
+/usr/lib/python2.7/site-packages/azot/config.py
+/usr/lib/python2.7/site-packages/azot/config.pyc
+/usr/lib/python2.7/site-packages/azot/config.pyo
 %defattr(-,root,root,-)
 %doc  LICENSE README.md config.sample.json
 

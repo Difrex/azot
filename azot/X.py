@@ -2,10 +2,13 @@ from Xlib import display
 
 # Get screen resolution
 def get_geometry():
-    width = display.Display().screen().width_in_pixels
-    height = display.Display().screen().height_in_pixels
-
-    return {"x": width, "y": height}
+    try:
+        width = display.Display().screen().width_in_pixels
+        height = display.Display().screen().height_in_pixels
+        
+        return {"x": width, "y": height}
+    except:
+        get_geometry()
 
 
 # Get mouse cursor position

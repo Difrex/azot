@@ -43,6 +43,7 @@ def do():
                     msg = type_exec(action)
                     notify(msg)
                     sleep(1)
+    sleep(0.3)
 
 
 # Detect type and execute
