@@ -26,7 +26,7 @@ Edit config.sample.json and put it into ~/.config/azot/config.json
 
 Youtube:
 
-[![ScreenShot](https://raw.githubusercontent.com/Difrex/azot/master/screenshot/screen.png)](https://www.youtu.be/-qg1swICh4Y)
+[![ScreenShot](https://raw.githubusercontent.com/Difrex/azot/master/screenshot/screen.png)](https://youtu.be/-qg1swICh4Y)
 
 ## Usage
 ```
