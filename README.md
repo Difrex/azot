@@ -22,6 +22,11 @@ Edit config.sample.json and put it into ~/.config/azot/config.json
 * libnotify-bin
 * python-xlib
 
+## In action
+
+Youtube: 
+[![ScreenShot](https://raw.githubusercontent.com/Difrex/azot/master/screenshot/screen.png)](https://www.youtu.be/-qg1swICh4Y)
+
 ## Usage
 ```
   azot.py [-h] [-c CONFIG]
