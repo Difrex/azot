@@ -24,8 +24,6 @@ def load():
     config = ast.literal_eval(config)
     config['corners'] = get_middle_areas()
 
-    print config['corners']
-
     return config
 
 
