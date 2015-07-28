@@ -3,4 +3,4 @@
 ## 0.2
 
 * Mouse click events
-* Debianized sources
+* ~~Debianized sources~~
