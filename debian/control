@@ -1,0 +1,16 @@
+Source: azot
+Section: python
+Priority: optional
+Maintainer: Denis Zheleztsov <difrex@bingo-boom.ru>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Vcs-Git: https://github.com/Difrex/azot
+
+Package: azot
+Architecture: all
+Depends: python, python-xlib, libnotify-bin
+Description: Screen corners action in all WMs
+
+Package: azot-docs
+Architecture: all
+Description: Documentation for Azot
