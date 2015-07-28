@@ -1,4 +1,5 @@
 from Xlib import display
+from time import sleep
 
 # Get screen resolution
 def get_geometry():
@@ -8,8 +9,10 @@ def get_geometry():
             height = display.Display().screen().height_in_pixels
             
             return {"x": width, "y": height}
-        except:
-            pass
+        except Exception, e:
+            print e
+            print "Spleep for 10 second"
+            sleep(10)
 
 
 # Get mouse cursor position
@@ -19,5 +22,7 @@ def get_cursor_position():
             data = display.Display().screen().root.query_pointer()._data
 
             return {'x': data['root_x'], 'y': data['root_y']}
-        except:
-            pass
+        except Exception, e:
+            print e
+            print "Spleep for 10 second"
+            sleep(10)
