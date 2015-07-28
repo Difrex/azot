@@ -1,7 +1,7 @@
 import ast
 import argparse
 import os
-from X import get_geometry
+from Azot.X import get_geometry
 
 # Globals
 config_path = os.environ['HOME'] + '/.config/azot/config.json'

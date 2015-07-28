@@ -1,7 +1,7 @@
 from Xlib import display
 from time import sleep
 
-from azot.logger import warning
+from Azot.logger import warning
 
 # Get screen resolution
 def get_geometry():

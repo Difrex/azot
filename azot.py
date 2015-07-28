@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import azot.action
+import Azot.action
 
 while 1:
-    azot.action.do()
+    Azot.action.do()

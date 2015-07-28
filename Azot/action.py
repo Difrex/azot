@@ -1,10 +1,10 @@
 import os
-import azot.config
-from X import get_cursor_position
+import Azot.config
+from Azot.X import get_cursor_position
 from time import sleep
 
 # Globals
-config = azot.config.load()
+config = Azot.config.load()
 corners = {
             'top': config['corners']['top_corner'],
             'right': config['corners']['right_corner'],
