@@ -1,6 +1,8 @@
 from Xlib import display
 from time import sleep
 
+from azot.logger import warning
+
 # Get screen resolution
 def get_geometry():
     while 1:
@@ -10,8 +12,7 @@ def get_geometry():
             
             return {"x": width, "y": height}
         except Exception, e:
-            print e
-            print "Spleep for 10 second"
+            warning(str(e) + '\n' + 'Spleep for 10 second')
             sleep(10)
 
 
@@ -23,6 +24,5 @@ def get_cursor_position():
 
             return {'x': data['root_x'], 'y': data['root_y']}
         except Exception, e:
-            print e
-            print "Spleep for 10 second"
+            warning(str(e) + '\n' + 'Spleep for 10 second')
             sleep(10)
