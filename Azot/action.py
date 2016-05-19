@@ -18,7 +18,7 @@ def do():
     def task_exec():
         msg = type_exec(action)
         notify(msg)
-        sleep(1)
+        sleep(config['after_exec_delay'])
 
     position = get_cursor_position()
     for action in config['actions']:
@@ -40,7 +40,7 @@ def do():
             elif action['corner'] == 'left' or action['corner'] == 'right':
                 if position['x'] == corners[ action['corner'] ] and position['y'] > config['corners']['middle_y_start'] and position['y'] < config['corners']['middle_y_end']:
                     task_exec()
-    sleep(0.3)
+    sleep(config['check_delay'])
 
 
 # Detect type and execute

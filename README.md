@@ -15,6 +15,7 @@ By default it's stored in ~/.config/azot/config.json
 * command: command to execute
 * corner: Screen corner 'left', 'right', 'top', 'bottom'
 * position: 'left', 'right', 'middle'
+* check_delay and after_exec_delay are set in seconds
 
 ### Depends
 

@@ -37,6 +37,12 @@ def load():
     config = ast.literal_eval(config)
     config['corners'] = get_middle_areas()
 
+    if not 'check_delay' in config.keys():
+        config['check_delay'] = 0.3
+
+    if not 'after_exec_delay' in config.keys():
+        config['after_exec_delay'] = 1
+
     return config
 
 
