@@ -8,7 +8,7 @@ Vcs-Git: https://github.com/Difrex/azot
 
 Package: azot
 Architecture: all
-Depends: python, python-xlib, libnotify-bin
+Depends: python3, python3-xlib, libnotify-bin
 Description: Screen corners action in all WMs
 
 Package: azot-docs
