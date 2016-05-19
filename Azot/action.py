@@ -15,6 +15,11 @@ corners = {
 
 # Execute command
 def do():
+    def task_exec():
+        msg = type_exec(action)
+        notify(msg)
+        sleep(1)
+
     position = get_cursor_position()
     for action in config['actions']:
 
@@ -22,27 +27,19 @@ def do():
         if action['position'] != 'middle':
             if action['corner'] == 'top' or action['corner'] == 'bottom':
                 if position['y'] == corners[ action['corner'] ] and position['x'] == corners[action['position']]:
-                    msg = type_exec(action)
-                    notify(msg)
-                    sleep(1) 
+                    task_exec()
             elif action['corner'] == 'left' or action['corner'] == 'right':
                 if position['x'] == corners[ action['position'] ] and position['y'] == corners[ action['corner'] ]:
-                    msg = type_exec(action)
-                    notify(msg)
-                    sleep(1)
+                    task_exec()
 
         # middles
         elif action['position'] == 'middle':
             if action['corner'] == 'top' or action['corner'] == 'bottom':
                 if position['y'] == corners[ action['corner'] ] and position['x'] > config['corners']['middle_x_start'] and position['x'] < config['corners']['middle_x_end']:
-                    msg = type_exec(action)
-                    notify(msg)
-                    sleep(1) 
+                    task_exec()
             elif action['corner'] == 'left' or action['corner'] == 'right':
                 if position['x'] == corners[ action['corner'] ] and position['y'] > config['corners']['middle_y_start'] and position['y'] < config['corners']['middle_y_end']:
-                    msg = type_exec(action)
-                    notify(msg)
-                    sleep(1)
+                    task_exec()
     sleep(0.3)
 
 
@@ -64,7 +61,6 @@ def type_exec(action):
 # Get shell command output
 def get_cmd(cmd):
     out = os.popen(cmd).read()
-    
     return out
 
 
@@ -72,4 +68,3 @@ def get_cmd(cmd):
 def notify(msg):
     if msg is not None:
         get_cmd( "notify-send 'azot event' \"{0}\"".format(msg) )
-
