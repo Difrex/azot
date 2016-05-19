@@ -1,6 +1,6 @@
-Azot/action.py usr/lib/python2.7/dist-packages/Azot
-Azot/logger.py usr/lib/python2.7/dist-packages/Azot
-Azot/config.py usr/lib/python2.7/dist-packages/Azot
-Azot/X.py usr/lib/python2.7/dist-packages/Azot
-Azot/__init__.py usr/lib/python2.7/dist-packages/Azot
+Azot/action.py usr/lib/python3.4/dist-packages/Azot
+Azot/logger.py usr/lib/python3.4/dist-packages/Azot
+Azot/config.py usr/lib/python3.4/dist-packages/Azot
+Azot/X.py usr/lib/python3.4/dist-packages/Azot
+Azot/__init__.py usr/lib/python3.4/dist-packages/Azot
 azot.py usr/bin

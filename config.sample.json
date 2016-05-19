@@ -18,5 +18,7 @@
       'type': 'exec',
       'command': 'scrot'
     }
-  ]
+  ],
+  'check_delay': 0.3,
+  'after_exec_delay': 1
 }
